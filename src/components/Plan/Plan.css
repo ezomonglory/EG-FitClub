@@ -1,0 +1,117 @@
+.plans-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.Plan-categ{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    width: 18rem;
+    background: var(--caloryCard);
+    color: white;
+}
+
+.plan-card:nth-child(2){
+    background: var(--planCard) ;
+    transform: scale(1.1);
+}
+
+.plan-card:nth-child(2)>svg{
+    fill: white;
+}
+
+.plan-card:nth-child(2)>.btn{
+    color: var(--orange);
+}
+.plan-card>svg{
+    fill: var(--orange);
+    width: 2rem;
+    height: 2rem;
+    
+}
+.plan-card>.btn{
+    color:black;
+}
+
+.feat{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.feat>span{
+    display: flex;
+    gap: 1rem;
+}
+
+.feat>span>img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.plan-card>:nth-child(2){
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.plan-card>:nth-child(3){
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.plan-card>:nth-child(5){
+    font-size: 0.8rem;
+}
+
+.blur-p-1{
+    width: 32rem;
+    height: 23rem;
+    left: 0;
+}
+
+.blur-p-2{
+    width: 32rem;
+    height: 23rem;
+    right: 0;
+}
+
+
+@media screen  and (max-width:768px) {
+    .Plan-categ{
+        margin-top: -1rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .plan-card{
+        width: 15rem;
+    }
+
+    .plan-card:nth-child(2){
+        transform: none;
+    }
+
+
+    
+.blur-p-1{
+    width: 10rem;
+    height: 23rem;
+    left: 0;
+}
+
+.blur-p-2{
+    width: 10rem;
+    height: 23rem;
+    right: 0;
+}
+}

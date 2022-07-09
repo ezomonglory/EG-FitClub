@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo{
+    width: 10rem;
+    height: 3rem;
+}
+
+.header-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    color: white;
+}
+
+.header-menu>li:hover{
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.bars{
+    width: 3rem;
+    height: 2.3rem;
+    top: 1rem;
+    background-color: var(--appColor);
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+.barp{
+    top: 1rem;
+    right: .5rem;
+    position: fixed;
+    z-index: 99;
+}
+
+.time{
+    position: absolute;
+    top: 0;
+    right:.5rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+    /* .bars{
+        /* position: fixed; */
+        /* right: 1.5rem; */
+        
+    .header{
+        z-index: 10;
+        /* position: absolute; */
+        top: 1rem;
+        padding-bottom: 5rem;
+    }
+
+    .header-menu{
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+        z-index: 99;
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .time{
+        display: block;
+    }
+
+}

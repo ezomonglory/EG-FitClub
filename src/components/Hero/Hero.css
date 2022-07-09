@@ -1,0 +1,411 @@
+.hero {
+	display: flex;
+	justify-content: space-between;
+    gap: 2rem;
+}
+
+.left-h {
+	padding: 1.5rem 2rem;
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+    position: relative;
+}
+
+.right-h {
+	flex: 1;
+    position: relative;
+    background-color: var(--orange);
+}
+
+.best-fit {
+	margin-top: 4rem;
+	width: fit-content;
+	padding: 20px 13px;
+	background-color: #363d42;
+	border-radius: 4rem;
+	text-transform: uppercase;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	color: white;
+}
+
+.best-fit > div {
+	position: absolute;
+	width: 100px;
+	background-color: var(--orange);
+	border-radius: 4rem;
+	height: 80%;
+}
+
+.best-fit > span {
+	z-index: 2;
+}
+
+.hero-text {
+	text-transform: uppercase;
+    gap: 1rem;
+	color: white;
+	font-size: 4.5rem;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	text-overflow: inherit;
+}
+
+.full{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 200;
+    text-transform: none;
+    width: 70%;
+}
+
+
+.figures{
+    display: flex;
+    gap: 2rem;
+}
+
+.figures>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.figures>div>:nth-child(1){
+    color: white;
+    font-size: 2rem;
+}
+
+.figures>div>:nth-child(2){
+    color: gray;
+    text-transform: uppercase;
+}
+
+.buttons{
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+.btn-get{
+    background-color: var(--orange);
+    text-transform: capitalize;
+    color: white;
+}
+
+.btn-learn{
+    border: solid 2px var(--orange);
+    background-color: transparent;
+    color: white;
+    text-transform: capitalize;
+}
+
+.right-h>.btn{
+    position: absolute;
+    top: 3rem; 
+    left: 10rem;
+    color: black;
+    border: transparent;
+}
+
+.heart-rate{
+    background-color: var(--darkGrey);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    width: fit-content;
+    align-items: start;
+    position: absolute;
+    left: 7rem;
+    top: 7rem;
+    border-radius: 5px;
+}
+
+.heart-rate>omg{
+    width: 2rem;
+}
+.heart{
+    color: var(--gray);   
+}
+
+
+.bpm{
+    color:white;
+    font-size: 1.5rem;
+}
+
+.hero_image{
+    position: absolute;
+    top: 10rem;
+    left: -8rem;
+    /* right: 8rem; */
+    width: 23rem;
+}
+
+.hero_image_back{
+    position: absolute;
+    top: 4rem;
+    left: -12rem;
+    z-index: -1;
+    width: 15rem;
+}
+
+.calories{
+    background-color: rgb(130, 129, 129);
+    padding: .7rem 1rem;
+    border-radius: 5px;
+    position: absolute;
+    width: fit-content;
+    display: flex;
+    gap: 2rem;
+    bottom: 4rem;
+    left: 36rem;
+    
+}
+
+.calorie_image{
+    /* width: 3rem; */
+}
+
+.calorie-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.calorie-text>span:nth-of-type(1){
+    color: rgb(94, 93, 93);
+    text-transform: capitalize;
+}
+
+.calorie-text>span:nth-of-type(2){
+    color: white;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.blur-h{
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+
+}
+
+
+    @media screen and (max-width:1200px) {
+        .calories{
+            background-color: rgb(130, 129, 129);
+            padding: .7rem 1rem;
+            border-radius: 5px;
+            position: absolute;
+            width: fit-content;
+            display: flex;
+            gap: 2rem;
+            margin-top: 1rem;
+            bottom: 0 !important;
+            left: 24rem !important;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .calories>img{
+            width: 3rem;
+            height: 3rem;
+        }
+
+        .calorie-text{
+            gap: 1rem;
+        }
+    }
+
+@media screen and (max-width:768px) {
+    .hero{
+        flex-direction: column;
+        position: relative;
+        /* padding-bottom:20rem ; */
+    }
+
+    .blur-h{
+        width: 14rem;
+    }
+
+    .left-h{
+        gap: 1rem;
+    }
+
+    .best-fit{
+        margin-top: 0;
+        font-size: small;
+        align-self: center;
+        transform: scale(0.9);
+        overflow: hidden;   
+    }
+
+    .hero-text{
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+    }
+
+    .hero-text>:nth-of-type(3){
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .figures{
+        justify-content: center;
+    }
+
+    .figures>div>:nth-child(1){
+        font-size: large;
+        text-align: center;
+    }
+    
+    .figures>div>:nth-child(2){
+        text-align: center;
+        font-size: small;
+    }
+
+    .buttons{
+        position: absolute;
+        bottom: 3rem !important;
+        width: 80%;
+        justify-content: center;
+        font-size: small;
+    }
+
+    .btn-get, .btn-learn{
+        padding: .5rem .9rem;
+    }
+
+    .right-h{
+        position: relative;
+        bottom: 0rem;
+        background: none;
+        width:100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0 6rem !important;
+        /* height: 100%; */
+        /* padding-left: rem; */
+    }
+
+    .heart-rate{
+        position: absolute;
+        top: 3rem;
+        left: 2rem !important;
+    }
+
+    .calories{
+        position: relative;
+        bottom: -25rem !important; 
+        left:8rem !important;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .calorie-text{
+        gap: 1rem;
+    }
+
+
+
+    .calories>img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    
+.calorie-text>span:nth-of-type(2){
+    color: white;
+    font-size: 1rem;
+}
+
+.hero_image{
+    position: relative;
+    width: 15rem;
+    top: 4rem;
+    left: 11rem;   
+    align-self: center;
+    margin-bottom: 2rem;
+}
+
+.hero_image_back{
+    top: 2rem;
+    width: 13rem;
+    left: 4rem !important;
+}
+
+  
+}
+
+
+
+@media screen and (max-width:500px) {
+ 
+    .right-h{
+        margin: 0 !important;
+        /* position: ; */
+        bottom: 0rem;
+        background: none;
+        width:100%;
+        align-items: center;
+        justify-content: center;
+        /* height: 100%; */
+        /* padding-left: rem; */
+    }
+
+    .heart-rate{
+        position: absolute;
+        top: 3rem;
+        /* margin-left: -5rem; */
+    }
+
+    .calories{
+        position: relative;
+        bottom: -25rem !important; 
+        left:0rem !important;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .calorie-text{
+        gap: 1rem;
+    }
+
+
+
+    .calories>img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    
+.calorie-text>span:nth-of-type(2){
+    color: white;
+    font-size: 1rem;
+}
+
+.hero_image{
+    position: relative;
+    width: 15rem;
+    top: 4rem;
+    left: 11rem;   
+    align-self: center;
+    margin-bottom: 2rem;
+}
+
+.hero_image_back{
+    top: 2rem;
+    width: 13rem;
+    left: 4rem !important;
+}
+}
